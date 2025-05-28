@@ -284,7 +284,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ARush_0: 3536295763116541970
+      ARush_1: 7597735083539568373
+      ARush_2: -1728754089501876137
+      ARush_3: 7635443677578134487
+      ARush_4: 2817088905223212029
+      ARush_5: 9035982875465642225
+      ARush_6: -6517084097678358848
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

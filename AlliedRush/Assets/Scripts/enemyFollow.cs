@@ -20,6 +20,7 @@ public class enemyFollow : MonoBehaviour
         posicion = transform.position;
         rb = GetComponent<Rigidbody2D>(); // Get the Rigidbody component attached to the player
         rb.linearVelocity = new Vector2(0, speed); // Set the initial velocity of the object
+        rb.freezeRotation = true; 
     }
 
     // Update is called once per frame
