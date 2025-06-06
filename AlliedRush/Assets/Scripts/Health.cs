@@ -8,10 +8,19 @@ public class Health : MonoBehaviour
 
     public Slider healthSlider;
 
+    public AudioClip damageSound;      // Assign your damage sound effect here in the Inspector
+    private AudioSource audioSource;
+
     void Start()
     {
         currentHealth = maxHealth;
         UpdateHealthBar();
+
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
     }
 
     public void TakeDamage(float amount)
@@ -19,6 +28,11 @@ public class Health : MonoBehaviour
         currentHealth -= amount;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         UpdateHealthBar();
+
+        if (damageSound != null)
+        {
+            audioSource.PlayOneShot(damageSound);
+        }
 
         if (currentHealth <= 0)
         {
@@ -37,3 +51,4 @@ public class Health : MonoBehaviour
         Destroy(gameObject);
     }
 }
+
