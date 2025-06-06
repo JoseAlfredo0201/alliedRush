@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 6dbb6b185de219041857e89491215b53
+guid: 660efb746ebb8844f84bb1332d9cf1c0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3682176603243820281
-    second: Over_0
+      213: -4976865006938031866
+    second: MaincharacterARwalk_0
+  - first:
+      213: 7834559349654973163
+    second: MaincharacterARwalk_1
+  - first:
+      213: -3178014499159406228
+    second: MaincharacterARwalk_2
+  - first:
+      213: 2437291539427738483
+    second: MaincharacterARwalk_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 112
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Over_0
+      name: MaincharacterARwalk_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 1024
+        x: 26
+        y: 1
+        width: 79
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f43a949c18b91330800000000000000
-      internalID: 3682176603243820281
+      spriteID: 609f26e05af9eeab0800000000000000
+      internalID: -4976865006938031866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaincharacterARwalk_1
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 1
+        width: 83
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bea66ef1832f9bc60800000000000000
+      internalID: 7834559349654973163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaincharacterARwalk_2
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 1
+        width: 97
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c69009e96ac65e3d0800000000000000
+      internalID: -3178014499159406228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MaincharacterARwalk_3
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 1
+        width: 96
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373c7a5edbff2d120800000000000000
+      internalID: 2437291539427738483
       vertices: []
       indices: 
       edges: []
@@ -135,7 +210,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Over_0: 3682176603243820281
+      MaincharacterARwalk_0: -4976865006938031866
+      MaincharacterARwalk_1: 7834559349654973163
+      MaincharacterARwalk_2: -3178014499159406228
+      MaincharacterARwalk_3: 2437291539427738483
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

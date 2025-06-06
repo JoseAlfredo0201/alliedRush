@@ -1,28 +1,40 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class movement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 10f; // The speed of the player
-    private Rigidbody2D rb; // Reference to the Rigidbody component
-    private Vector2 moveInput; // Store the movement input
+    [SerializeField] private float moveSpeed = 5f;
+    private Rigidbody2D rb;
+    private Vector2 moveInput;
+    private Animator animator;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>(); // Get the Rigidbody component attached to the player
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
 
     }
 
     void Update()
     {
-        // Get the horizontal and vertical input
-        moveInput.x = Input.GetAxis("Horizontal"); // Get horizontal input (A/D or Left/Right arrow keys)
-        moveInput.y = Input.GetAxis("Vertical"); // Get vertical input (W/S or Up/Down arrow keys)
+        rb.linearVelocity = moveInput * moveSpeed;
     }
 
-    void FixedUpdate()
+    public void Move(InputAction.CallbackContext context)
     {
-        // Move the player based on input
-        rb.linearVelocity = new Vector2(moveInput.x * speed, rb.linearVelocity.y); // Set the horizontal velocity based on input and keep the vertical velocity unchanged
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, moveInput.y * speed); // Set the vertical velocity based on input
+
+        animator.SetBool("isWalking", true);
+
+        if (context.canceled)
+        {
+            animator.SetBool("isWalking", false);
+            animator.SetFloat("LastInputX", moveInput.x);
+            animator.SetFloat("LastInputY", moveInput.y);
+        }
+        moveInput = context.ReadValue<Vector2>();
+        animator.SetFloat("InputX", moveInput.x);
+        animator.SetFloat("InputY", moveInput.y);
     }
 }
