@@ -6,6 +6,9 @@ public class EnemyShooting : MonoBehaviour
 {
     public GameObject bullet;
     public Transform bulletPos;
+    public AudioClip shootSound;
+    private AudioSource audioSource;
+
 
     private float timer;
     private GameObject player;
@@ -13,6 +16,7 @@ public class EnemyShooting : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        audioSource = GetComponent<AudioSource>();
 
     }
 
@@ -38,5 +42,10 @@ public class EnemyShooting : MonoBehaviour
     void shoot()
     {
         Instantiate(bullet, bulletPos.position, Quaternion.identity);
+
+        if (shootSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(shootSound); // 🔊 Reproduce el sonido
+        }
     }
 }
