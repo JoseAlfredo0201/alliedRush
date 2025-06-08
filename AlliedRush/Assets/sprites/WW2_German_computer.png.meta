@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WW2_German_computer_0: 4195673483362616847
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
