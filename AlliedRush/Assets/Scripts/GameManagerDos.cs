@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class GameManagerDos : MonoBehaviour
 {
     [Header("Puzzle Settings")]
     public string puzzleKey = "Puzzle1Solved";      // Set this uniquely per puzzle scene
@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         pieces = new List<Transform>();
-        size = 2;
+        size = 3;
         CreateGamePieces(0.01f);
         StartCoroutine(ShuffleAfterDelay(0.5f));
     }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 33075aee654e5314d9c693134e8d3be3
+guid: a03323ba57402ec4d8e43d4b5cb60578
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7537448957021438209
-    second: Branderburg_0
+      213: 6194694426152877100
+    second: Alemania_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Branderburg_0
+      name: Alemania_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 101c6eb24e56a9860800000000000000
-      internalID: 7537448957021438209
+      spriteID: c2c3fea72c9f7f550800000000000000
+      internalID: 6194694426152877100
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Branderburg_0: 7537448957021438209
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
