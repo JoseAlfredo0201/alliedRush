@@ -15,7 +15,7 @@ public class PlayerDeathHandler : MonoBehaviour
         if (player == null)
         {
 
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(16);
         }
     }
 }

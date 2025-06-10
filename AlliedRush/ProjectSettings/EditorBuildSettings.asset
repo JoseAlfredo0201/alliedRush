@@ -6,20 +6,50 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 54ecfaa1a03a59447ae46eac51b54183
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: da3174d2b14d7e541bb202cee966d368
+  - enabled: 1
+    path: Assets/Scenes/Tutorial1.unity
+    guid: 4aac8e8c3673e6e4d837dd9023d925cb
+  - enabled: 1
+    path: Assets/Scenes/Tutorial2.unity
+    guid: 43a8af5f3b8db154db01d30ad266154f
+  - enabled: 1
+    path: Assets/Scenes/Tutorial3.unity
+    guid: 3fd6dd21858d0df4d823d3c763643954
+  - enabled: 1
+    path: Assets/Scenes/Tutorial4.unity
+    guid: 67440f92996b0d643a086c1d10b47316
   - enabled: 1
     path: Assets/Scenes/Nivel.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
+    path: Assets/Scenes/Puzzle_Level1.unity
+    guid: b0592b7a2a3540b48bdb6f16e6c44e32
+  - enabled: 1
     path: Assets/Scenes/Nivel 2.unity
     guid: 6e64c2daa8df75a4eb69a076b79c674c
+  - enabled: 1
+    path: Assets/Scenes/Puzzle_Level2.unity
+    guid: 52a076912492add4c93607ce00610a9c
+  - enabled: 1
+    path: Assets/Scenes/Nivel3Tutorial.unity
+    guid: 331a57e320888f445927561e17263eca
   - enabled: 1
     path: Assets/Scenes/Nivel3.unity
     guid: 13510740513f63943bd3c3c1239354f5
   - enabled: 1
     path: Assets/Scenes/Nivel4.unity
     guid: d235945f6cc711648a372806876ff49b
+  - enabled: 1
+    path: Assets/Scenes/Puzzle_Level3.unity
+    guid: 69e7b0431b5c8a044abbf445a1d7a8d6
+  - enabled: 1
+    path: Assets/Scenes/Nivel5Tutorial.unity
+    guid: b88134c6b2d5377498dac325c9e2affe
   - enabled: 1
     path: Assets/Scenes/Nivel5.unity
     guid: b2e35349468832a4cbe815afef87054c
@@ -29,15 +59,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/You Win.unity
     guid: 90fa9403e438b344488a62bf804b7ac7
-  - enabled: 1
-    path: Assets/Scenes/Puzzle_Level1.unity
-    guid: b0592b7a2a3540b48bdb6f16e6c44e32
-  - enabled: 1
-    path: Assets/Scenes/Puzzle_Level2.unity
-    guid: 52a076912492add4c93607ce00610a9c
-  - enabled: 1
-    path: Assets/Scenes/Puzzle_Level3.unity
-    guid: 69e7b0431b5c8a044abbf445a1d7a8d6
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
