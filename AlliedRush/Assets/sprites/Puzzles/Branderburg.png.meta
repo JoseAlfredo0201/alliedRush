@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Branderburg_0: 7537448957021438209
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

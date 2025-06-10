@@ -7,15 +7,22 @@ public class PuzzleComputer : MonoBehaviour, IInteractable
 
     public void OnAction(GameObject caller)
     {
-        // Save player last position before loading puzzle scene
-        if (PlayerData.Instance != null)
+        if (caller != null)
         {
-            PlayerData.Instance.LastPosition = caller.transform.position;
+            Vector3 pos = caller.transform.position;
+            string sceneName = SceneManager.GetActiveScene().name;
+
+            PlayerPrefs.SetFloat(sceneName + "_x", pos.x);
+            PlayerPrefs.SetFloat(sceneName + "_y", pos.y);
+            PlayerPrefs.SetFloat(sceneName + "_z", pos.z);
+            PlayerPrefs.Save();
         }
 
         SceneManager.LoadScene(puzzleSceneName);
     }
 }
+
+
 
 
 

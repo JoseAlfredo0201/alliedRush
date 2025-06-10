@@ -10,17 +10,11 @@ public class SecretDoor : MonoBehaviour
         if (resetKeyOnStart)
         {
             PlayerPrefs.DeleteKey(puzzleKey);
-            Debug.Log($"[SecretDoor] Reset key '{puzzleKey}'");
         }
 
         if (PlayerPrefs.GetInt(puzzleKey, 0) == 1)
         {
-            Debug.Log($"[SecretDoor] Key '{puzzleKey}' found. Door will open.");
             gameObject.SetActive(false);
-        }
-        else
-        {
-            Debug.Log($"[SecretDoor] Key '{puzzleKey}' missing or 0. Door stays closed.");
         }
     }
 }

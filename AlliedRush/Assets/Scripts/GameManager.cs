@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         pieces = new List<Transform>();
-        size = 3;
+        size = 2;
         CreateGamePieces(0.01f);
         StartCoroutine(ShuffleAfterDelay(0.5f));
     }
@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
             puzzleSolved = true;
             PlayerPrefs.SetInt(puzzleKey, 1);
             PlayerPrefs.Save();
-            Debug.Log($"Puzzle solved! Saved key: {puzzleKey}");
+            Debug.Log($"Puzzle solved!");
 
             StartCoroutine(GoBackToLevelAfterDelay(1.5f));
         }
