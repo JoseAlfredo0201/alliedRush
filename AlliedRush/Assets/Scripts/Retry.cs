@@ -12,6 +12,11 @@ public class Retry : MonoBehaviour
     public void ExitGame()
     {
         Debug.Log("Saliendo del juego...");
+
+        // Reset PlayerPrefs before quitting
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
+        
         Application.Quit();
 
         // Esto solo se nota en un ejecutable, no en el editor de Unity
