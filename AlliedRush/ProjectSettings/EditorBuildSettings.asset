@@ -6,8 +6,32 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Menu.unity
+    guid: da3174d2b14d7e541bb202cee966d368
+  - enabled: 1
+    path: Assets/Scenes/Nivel.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Nivel 2.unity
+    guid: 6e64c2daa8df75a4eb69a076b79c674c
+  - enabled: 1
+    path: Assets/Scenes/Nivel3.unity
+    guid: 13510740513f63943bd3c3c1239354f5
+  - enabled: 1
+    path: Assets/Scenes/Nivel4.unity
+    guid: d235945f6cc711648a372806876ff49b
+  - enabled: 1
+    path: Assets/Scenes/Nivel5.unity
+    guid: b2e35349468832a4cbe815afef87054c
+  - enabled: 1
+    path: Assets/Scenes/Game Over.unity
+    guid: 8cf8b6656e3eac04f937afbfc952036b
+  - enabled: 1
+    path: Assets/Scenes/You Win.unity
+    guid: 90fa9403e438b344488a62bf804b7ac7
+  - enabled: 1
+    path: Assets/Scenes/Puzzle_Level1.unity
+    guid: b0592b7a2a3540b48bdb6f16e6c44e32
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
